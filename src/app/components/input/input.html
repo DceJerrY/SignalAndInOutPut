@@ -1,0 +1,5 @@
+<p-fieldset legend="Input">
+    <appform (outPersons)="setPersons($event)"></appform>
+    <p-divider />
+    <grid-input [persons]="this.getPerson()" />
+</p-fieldset>

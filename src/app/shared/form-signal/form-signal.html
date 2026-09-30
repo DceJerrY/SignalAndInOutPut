@@ -1,0 +1,19 @@
+<form [formGroup]="this.form">
+    <div class="grid grid-cols-3 gap-2">
+        <div>
+            <p-floatlabel variant="on">
+                <input pInputText id="txtname" formControlName="name" autocomplete="off" fluid />
+                <label for="txtname">Nombres</label>
+            </p-floatlabel>
+        </div>
+        <div>
+            <p-floatlabel variant="on">
+                <input pInputText id="txtlastName" formControlName="lastName" autocomplete="off" fluid />
+                <label for="txtlastName">Apellidos</label>
+            </p-floatlabel>
+        </div>
+        <div>
+            <p-button label="Adicionar" icon="pi pi-plus" fluid (click)="add()" />
+        </div>
+    </div>
+</form>
